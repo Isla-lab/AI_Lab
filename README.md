@@ -17,10 +17,10 @@ Code for the lab of Artificial Intelligence course, Bachelor's degree in Compute
      - Install Git: download [here](https://gitforwindows.org/)
 
 3. Setup Conda environment:
-   - `git clone https://github.com/vrncst/AI_Lab`
-   - `conda env create -f AI_Lab/tools/ai-lab-env.yml`
+   - `git clone https://github.com/isla-lab/AI_Lab`
+   - `cd AI_Lab`
+   - `conda env create -f tools/ai-lab-env.yml`
 
-   
 
 ## Using the Jupyter Notebook
 
