@@ -54,3 +54,21 @@ class BlockedMazeEnv(ObsGrid):
         rewards = {"C": 0, "S": 0, "G": 1}
         actdyn = {0: {0: 1.0}, 1: {1: 1.0}, 2: {2: 1.0}, 3: {3: 1.0}}
         super().__init__(actions, grid, actdyn, rewards)
+        
+class BranchMazeEnv(ObsGrid):
+    """
+    Fully observable deterministic maze with
+    multiple routes and blocking walls.
+    """
+    def __init__(self):
+        actions = {0: "L", 1: "R", 2: "U", 3: "D"}
+        grid = [
+            ["C", "C", "C", "C"],
+            ["S", "W", "C", "C"],
+            ["C", "W", "C", "W"],
+            ["C", "C", "C", "C"],
+            ["W", "W", "W", "G"]
+        ]
+        rewards = {"C": 0, "S": 0, "G": 1}
+        actdyn = {0: {0: 1.0}, 1: {1: 1.0}, 2: {2: 1.0}, 3: {3: 1.0}}
+        super().__init__(actions, grid, actdyn, rewards)

@@ -17,7 +17,9 @@ register(
 register(
     id='BlockedMaze-v0',
     entry_point='envs:BlockedMazeEnv')
-
+register(
+    id='BranchMaze-v0',
+    entry_point='envs:BranchMazeEnv')
 register(
     id='LavaFloor-v0',
     entry_point='envs:LavaFloorEnv')
