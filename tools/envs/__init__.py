@@ -43,3 +43,9 @@ register(
 register(
     id='WindyGridworld-v0',
     entry_point='envs:WindyGridworldEnv')
+register(
+    id="AquaticEnv-v0",
+    entry_point="envs.aquatic_env:AquaticEnv")
+register(
+    id="AquaticSmallEnv-v0",
+    entry_point="envs.aquatic_env:AquaticSmallEnv")
